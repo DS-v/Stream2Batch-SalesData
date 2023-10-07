@@ -36,6 +36,6 @@ if __name__ == '__main__':
         while True:
             data = generate_order_data()
             insert_into_dynamodb(data)
-            time.sleep(3)  # Sleep for 10 seconds
+            time.sleep(1)  # Sleep for 1 second
     except KeyboardInterrupt:
         print("\nScript stopped by manual intervention!")
